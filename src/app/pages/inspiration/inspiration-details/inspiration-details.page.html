@@ -1,0 +1,54 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="warning">
+    <ion-title>Details </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [disabled]="displayForm.invalid" (click)="submitData()">
+        <ion-icon name="save" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button [disabled]="!this.detailsId" (click)="deleteDetails()">
+        <ion-icon name="trash" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button (click)="back()">
+        <ion-icon name="arrow-back" slot="icon-only"></ion-icon>
+      </ion-button>
+      <ion-button (click)="logOut()">
+        <ion-icon name="log-out" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form [formGroup]="displayForm" class="p-10">
+    <ion-item>
+      <ion-label position="floating">Title</ion-label>
+      <ion-input type="text" formControlName="Title"></ion-input>
+    </ion-item>
+    <ion-label color="danger" *ngIf="displayForm.get('Title').touched && displayForm.get('Title').errors?.required">
+      Title is mandatory
+    </ion-label>
+    <ion-item>
+      <ion-label position="floating">Description</ion-label>
+      <ion-textarea type="text" autoGrow="true" formControlName="Description"></ion-textarea>
+    </ion-item>
+    <ion-label color="danger"
+      *ngIf="displayForm.get('Description').touched && displayForm.get('Description').errors?.required">
+      Description is mandatory
+    </ion-label>
+    <!-- <ion-item> -->
+    <div style="margin-top: 10px;">
+      <ion-label style="padding-left:15px">Image</ion-label>
+      <ion-row *ngIf="imageUpload" style="margin-top:10px">
+        <img [src]="displayImage" height="auto" width="100%" />
+      </ion-row>
+      <ion-buttons slot="end" style="padding-left: 5px;">
+        <ion-button (click)="pickImage()">
+          <ion-icon name="cloud-upload" slot="icon-only"></ion-icon>
+        </ion-button>
+        <ion-button [disabled]="!imageUpload" (click)="deleteImage()">
+          <ion-icon name="close" slot="icon-only"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </div>
+  </form>
+</ion-content>

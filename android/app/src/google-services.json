@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1073709398626",
+    "project_id": "inspirationapp-fdf62",
+    "storage_bucket": "inspirationapp-fdf62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073709398626:android:45724940472c9d34c26f3b",
+        "android_client_info": {
+          "package_name": "com.IonicInspiration.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073709398626-5937cqodhd9e9sv7led83tvi11fon8p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.IonicInspiration.app",
+            "certificate_hash": "49a31506f355c7c50e407cb4801b2d9784afbc43"
+          }
+        },
+        {
+          "client_id": "1073709398626-dhoofuremicbraeh0jv31hq7v01dih9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqdWPGoD3L-GDhnK3QtzkBhxNosHbNrKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073709398626-dhoofuremicbraeh0jv31hq7v01dih9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

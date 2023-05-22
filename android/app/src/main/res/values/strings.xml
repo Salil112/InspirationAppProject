@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">InspirationApp</string>
+    <string name="title_activity_main">InspirationApp</string>
+    <string name="package_name">com.IonicInspiration.app</string>
+    <string name="custom_url_scheme">com.IonicInspiration.app</string>
+    <string name="facebook_app_id">1500951777343312</string>
+    <string name="fb_login_protocol_schema">fb1500951777343312</string>
+    <string name="facebook_client_token">fd89e3f418b0718507ef83f634727ea2</string>
+    <string name="server_client_id">1073709398626-5937cqodhd9e9sv7led83tvi11fon8p9.apps.googleusercontent.com</string>
+</resources>
