@@ -113,10 +113,10 @@ export class InspirationDetailsPage implements OnInit {
   }
 
   deleteDetails(){
-    this._commonService.presentAlertConfirm('Are you sure you want to delete this record')
+    this._commonService.presentAlertConfirm('Are you sure you want to delete this record?')
       .then(async (res) => {
         try {
-          this._commonService.inspirationRecords.splice(this.detailsId, 1);
+          this._commonService.inspirationRecords = this._commonService.inspirationRecords.filter((obj:any) => obj.id !== this.detailsId);
           this.back();
         } catch (error) {
           console.log("The error",error);
